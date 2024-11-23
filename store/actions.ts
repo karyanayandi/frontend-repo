@@ -1,19 +1,16 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
 import {
   browserLocalPersistence,
   setPersistence,
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
-
-import { initializeApp } from "firebase/app";
+import { createAsyncThunk } from "@reduxjs/toolkit";
 import { getAuth } from "firebase/auth";
-
-import { fetchUserData, setAuthToken, updateUserData } from "@/apis/userApi";
+import { initializeApp } from "firebase/app";
 
 import { HTTP_STATUS } from "@/commons/constant";
-
 import { ResponseDT } from "@/models/responseModel";
+import { fetchUserData, setAuthToken, updateUserData } from "@/apis/userApi";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,

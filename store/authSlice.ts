@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 import { loginUser, logoutUser } from "./actions";
 
 interface AuthState {
