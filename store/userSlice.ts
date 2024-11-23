@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 import { fetchUser, updateUser } from "./actions";
 
-interface UserState {
+export interface UserState {
   user: any | null;
   loading: boolean;
   error: string | null;

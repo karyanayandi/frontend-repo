@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 import { loginUser, logoutUser } from "./actions";
 
-interface AuthState {
+export interface AuthState {
   auth: any | null;
   loading: boolean;
   error: string | null;
